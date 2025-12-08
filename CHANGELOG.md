@@ -6,6 +6,11 @@
 - [[Unreleased] {#unreleased}](#unreleased-unreleased)
   - [Added {#added-1}](#added-added-1)
   - [Changed {#changed-1}](#changed-changed-1)
+- [[2.2.0] - 2025-12-09 {#220---2025-12-09}](#220-2025-12-09-220-2025-12-09)
+  - [Changed {#changed-1}](#changed-changed-1)
+- [[2.1.0] - 2025-10-25 {#210---2025-10-25}](#210-2025-10-25-210-2025-10-25)
+  - [Added {#added-1}](#added-added-1)
+  - [Changed {#changed-1}](#changed-changed-1)
 - [[2.0.0] - 2025-10-18 {#200---2025-10-18}](#200-2025-10-18-200-2025-10-18)
   - [Added {#added-1}](#added-added-1)
   - [Changed {#changed-1}](#changed-changed-1)
@@ -39,6 +44,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added {#added-1}
 
 ### Changed {#changed-1}
+
+## [2.2.0] - 2025-12-09 {#220---2025-12-09}
+
+### Changed {#changed-1}
+
+- **Model Name Update**: Updated default model name from `Qwen3-Coder` to `qwen3-coder-plus` across all workflows and documentation
+- **CLI Option Handling**: Refactored validation and configuration processes for CLI options, improving code readability and maintainability
+- **API Key Requirement**: Made `api_key` field required in action.yml for better security
+- **Message Formatting**: Ensured newline before assistant messages for improved readability
+- **Scheduled CI Builds**: Enabled daily scheduled builds for CI image to ensure up-to-date environments
+- **Documentation Updates**: Updated prompts and examples in end-to-end tests for more relevant testing scenarios
+
+## [2.1.0] - 2025-10-25 {#210---2025-10-25}
+
+### Added {#added-1}
+
+- **New CLI Module Structure**: Introduced dedicated `cli` module with sub-modules for arguments and validation, improving code organization and maintainability
+- **iFlow Module**: Added dedicated `iflow` module for iFlow-specific configurations and communication
+- **GitHub Module**: Added dedicated `github` module for GitHub Actions integration
+- **Enhanced Process Handling**: Improved end-to-end tests with better process and output handling using `std::io::{BufRead, BufReader}` and `std::thread`
 
 ## [2.0.0] - 2025-10-18 {#200---2025-10-18}
 
