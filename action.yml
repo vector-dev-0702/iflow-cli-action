@@ -22,7 +22,7 @@ inputs:
   model:
     description: 'Model name to use'
     required: false
-    default: 'Qwen3-Coder'
+    default: 'qwen3-coder-plus'
   working_directory:
     description: 'Working directory to run iFlow CLI from'
     required: false
